@@ -46,7 +46,7 @@ def checkForDraw(gameTable):
 def inputIsValid(input, gameTable):
     columnNames = ["1","2","3"]
     rowNames = ["A", "B", "C"]
-    if len(input) > 2 or len(input) == 0:
+    if len(input) != 2:
         return False
     if not(input[0] in columnNames):
         return False
